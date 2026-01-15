@@ -1,0 +1,22 @@
+{
+  "name": "kelompok-1-pw-backend",
+  "version": "1.0.0",
+  "description": "Backend for Kelompok 1 PW",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "db:seed": "node seeder/seed.js",
+    "db:reset": "node config/databaseReset.js",
+    "db:fresh": "npm run db:reset && npm run db:seed"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "sequelize": "^6.35.1",
+    "web-push": "^3.6.7"
+  }
+}
